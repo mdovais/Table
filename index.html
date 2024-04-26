@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table {
+            width: 100%;
+            margin-top: 25px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #c9ddc7;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f4e5e5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Table</h2>
+    <div class="pagination" style="width: 200px; margin: auto; display: flex; gap: 30px; margin-top: 10px;">
+        <button style="width: 50px; padding: 8px; border-radius: 7px;" id="previous-btn">prev</button>
+        <p id="page-no"></p>
+        <button style="width: 50px; padding: 8px; border-radius: 7px;" id="next-btn">next</button>
+    </div>
+    <table>
+        <thead id="table-head">
+            <div class="flex-table"></div>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+
+</body>
+<script type="module" src="script.js"></script>
+
+</html>
